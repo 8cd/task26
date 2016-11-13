@@ -48,3 +48,8 @@
 2016-11-13 11:47:59 [1059] [INFO] Using worker: sync
 2016-11-13 11:47:59 [1064] [INFO] Booting worker with pid: 1064
 2016-11-13 11:47:59 [1065] [INFO] Booting worker with pid: 1065
+2016-11-13 17:10:50 [115] [INFO] Starting gunicorn 17.5
+2016-11-13 17:10:50 [115] [INFO] Listening at: http://0.0.0.0:8000 (115)
+2016-11-13 17:10:50 [115] [INFO] Using worker: sync
+2016-11-13 17:10:50 [128] [INFO] Booting worker with pid: 128
+2016-11-13 17:10:50 [136] [INFO] Booting worker with pid: 136
