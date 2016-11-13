@@ -7,6 +7,7 @@ from django.shortcuts import render, get_object_or_404
 from django.contrib.auth.models import User
 from qa.forms import AskForm, AnswerForm
 from django.views.decorators.csrf import csrf_exempt
+from django.views.decorators.http import require_GET, require_POST
 
 def paginate(request, qs):
 	try:
@@ -59,19 +60,18 @@ def popular(request):
 		'paginator': paginator,
 	})	
 
+
 @csrf_exempt
+
 def question_detail(request, pk):
+	if request.method is 'POST':
+		return answer(request)
 	question = get_object_or_404(Question, id=pk)
 	answers = question.answer_set.all()
 
-	if request.method == 'GET':
-		form = AnswerForm()
-		
-	if request.method == 'POST':
-		Answer.objects.create(text=request.POST.get('text'),question=q,author=User.objects.get(id='1'))
-		form = AnswerForm
-
+	form = AnswerForm()
 	return render(request, 'question.html', {'question': question,'answers': answers, 'form':form,})	
+
 			
 
 def ask(request):

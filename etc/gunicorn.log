@@ -53,3 +53,21 @@
 2016-11-13 17:10:50 [115] [INFO] Using worker: sync
 2016-11-13 17:10:50 [128] [INFO] Booting worker with pid: 128
 2016-11-13 17:10:50 [136] [INFO] Booting worker with pid: 136
+2016-11-13 17:47:39 [115] [INFO] Handling signal: term
+2016-11-13 20:47:39 [128] [INFO] Worker exiting (pid: 128)
+2016-11-13 20:47:39 [136] [INFO] Worker exiting (pid: 136)
+2016-11-13 17:47:39 [115] [INFO] Shutting down: Master
+2016-11-13 17:47:40 [898] [INFO] Starting gunicorn 17.5
+2016-11-13 17:47:40 [898] [INFO] Listening at: http://0.0.0.0:8000 (898)
+2016-11-13 17:47:40 [898] [INFO] Using worker: sync
+2016-11-13 17:47:40 [903] [INFO] Booting worker with pid: 903
+2016-11-13 17:47:40 [904] [INFO] Booting worker with pid: 904
+2016-11-13 17:54:59 [898] [INFO] Handling signal: term
+2016-11-13 17:54:59 [903] [INFO] Worker exiting (pid: 903)
+2016-11-13 20:54:59 [904] [INFO] Worker exiting (pid: 904)
+2016-11-13 17:54:59 [898] [INFO] Shutting down: Master
+2016-11-13 17:54:59 [972] [INFO] Starting gunicorn 17.5
+2016-11-13 17:54:59 [972] [INFO] Listening at: http://0.0.0.0:8000 (972)
+2016-11-13 17:54:59 [972] [INFO] Using worker: sync
+2016-11-13 17:54:59 [977] [INFO] Booting worker with pid: 977
+2016-11-13 17:54:59 [978] [INFO] Booting worker with pid: 978
